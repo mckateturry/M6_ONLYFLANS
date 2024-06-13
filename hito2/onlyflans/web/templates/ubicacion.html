@@ -1,0 +1,51 @@
+{% extends 'base.html' %} {% block content %} {%load static%}
+
+
+<div class="mapa py-1">
+    <div class="container">
+      <h2 class="text-center display-2 mapatitulo">¿Dónde estamos?</h2>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832.3144225610015!2d-70.6315209303555!3d-33.442592279267586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5828191f367%3A0x2223d7a135e92bc4!2sFrancisco%20Bilbao%20100%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1718179031302!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <img src="{% static 'assets/img/metro.png' %}" width="350"  alt="..." />
+          <p class="mapatexto"> <strong>¡A pasos del metro Parque Bustamante!</strong> <br/>
+            Visítanos hoy en Francisco Bilbao 100, Providencia. <br />Para tomar un
+            refrigerio y te prometemos que saldrás satisfecho (y lleno).
+          </p>
+          <img src="{% static 'assets/img/fachadaonlyflans.jpg' %}" width="300" alt="..." />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--Marquee infinita-->
+<div class="marquee d-block">
+    <ul class="marquee__content">
+      <li class="marquee__item">&nbsp;Y &bull;</li>
+      <li class="marquee__item">&nbsp;Sí &bull;</li>
+      <li class="marquee__item">&nbsp;Nos &bull;</li>
+      <li class="marquee__item">&nbsp;Comemos &bull;</li>
+      <li class="marquee__item">&nbsp;Un &bull;</li>
+      <li class="marquee__item">&nbsp;Flan &bull;</li>
+      <li class="marquee__item">&nbsp;De &bull;</li>
+      <li class="marquee__item">&nbsp;Calabaza? &bull;</li>
+      <li class="marquee__item">&nbsp;Visítanos &bull;</li>
+  
+      <li class="marquee__item">&nbsp;Y &bull;</li>
+      <li class="marquee__item">&nbsp;Sí &bull;</li>
+      <li class="marquee__item">&nbsp;Nos &bull;</li>
+      <li class="marquee__item">&nbsp;Comemos &bull;</li>
+      <li class="marquee__item">&nbsp;Un &bull;</li>
+      <li class="marquee__item">&nbsp;Flan &bull;</li>
+      <li class="marquee__item">&nbsp;De &bull;</li>
+      <li class="marquee__item">&nbsp;Calabaza? &bull;</li>
+      <li class="marquee__item">&nbsp;Visítanos &bull;</li>
+  </div>
+
+  
+
+{% endblock %}

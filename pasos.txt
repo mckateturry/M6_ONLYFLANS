@@ -1,0 +1,14 @@
+python manage.py startapp homeapp
+en settings.py
+        INSTALLED_APPS = [
+            "homeapp",
+            ...
+        ]
+
+crear funciones en views.py de la aplicación
+agregar ruta en urls.py de la aplicación principal
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py runserver
